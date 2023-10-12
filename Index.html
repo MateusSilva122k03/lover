@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4 meses de namoro</title>
+    <style>
+        body {
+            background: linear-gradient(to bottom, maroon, black);
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            color: white;
+        }
+
+        .container {
+            text-align: center;
+            background: linear-gradient(to bottom, maroon, black);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+    
+        .header {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .logo {
+            width: 250px;
+        }
+
+        .image-container img {
+            width: 100%;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        .message {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .button {   
+            background-color: maroon;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img class="logo" src="./img/logo.png" alt="Logo Sword Art Online">
+        <div class="header">
+            <h2>Happy 4 Months My Love</h2>
+        </div>
+        <div class="image-container">
+            <img src="./img/amor.jpg" alt="Imagem de Sword Art Online fofa">
+        </div>
+        <div class="message">
+            <p></p>
+            <p>You are the Asuna of my life, the most incredible person I have ever met. Every moment by your side is like an adventure in SAO. I love you!</p>
+        </div>
+        <input type="password" id="password" placeholder="Digite a senha">
+        <button class="button" onclick="checkPassword()">For My Girl</button>
+    </div>
+
+    <script>
+        function checkPassword() {
+            var senhaCorreta = "MaIsa"; // Coloque aqui a senha correta
+            var senhaInserida = document.getElementById("password").value;
+
+            if (senhaInserida === senhaCorreta) {
+                window.location.href = "index1.html"; // Redireciona para outra página
+            } else {
+                alert("Que pena, aparentemente isto não é para você. Vaza!");
+            }
+        }
+    </script>
+</body>
+
+</html>
